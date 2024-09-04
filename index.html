@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RatCoin App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="main" class="section active">
+            <h1>Ваш баланс RatCoin</h1>
+            <p id="balance">Загрузка...</p>
+        </div>
+
+        <div id="tasks" class="section">
+            <h1>Задания</h1>
+            <p>Подпишитесь на наш <a href="https://t.me/RatcCoin" target="_blank">канал Telegram</a>, чтобы получить 1000 RatCoin.</p>
+            <button id="claimTask">Получить награду</button>
+        </div>
+
+        <div id="airdrop" class="section">
+            <h1>Airdrop</h1>
+            <button id="addWallet">Добавить кошелёк</button>
+        </div>
+
+        <div id="walletModal" class="modal">
+            <div class="modal-content">
+                <h2>Выберите кошелёк</h2>
+                <button class="wallet-option" data-wallet="Telegram Wallet">Telegram Wallet</button>
+                <button class="wallet-option" data-wallet="Tonkeeper">Tonkeeper</button>
+                <button class="wallet-option" data-wallet="Другой">Другой</button>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <button class="nav-button" data-section="main">Главная</button>
+            <button class="nav-button" data-section="tasks">Задания</button>
+            <button class="nav-button" data-section="airdrop">Airdrop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
